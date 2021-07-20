@@ -1,27 +1,32 @@
-import React from "react";
-import "./Header.css";
-import { Jumbotron, Container } from 'reactstrap';
-import landingPhoto from '../Assets/mnt_landscape.jpg';
+import React, { useState } from 'react';
+import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
 
+const Header = (props) => {
+  const [collapsed, setCollapsed] = useState(true);
 
-export default function Header(){
-    return (
-        <div>
-            <Jumbotron style={{backgroundImage:`url(${landingPhoto})`, backgroundSize:'cover'}}>
-                <Container>
-                    <div class="header">
-                        <h1 class="header h1">Coder [at Law]</h1>
-                        <div class="header">
-                            <ul>
-                                <li><a href="https://github.com/j-toups">Git Hub</a></li>
-                                <li><a href="#contact">Contact</a></li>
-                                <li><a href="#work">Recent Work</a></li>
-                                <li><a href="#aboutme">About</a></li> 
-                            </ul>
-                        </div>
-                    </div>
-                </Container>
-            </Jumbotron>
-        </div>
-    )
+  const toggleNavbar = () => setCollapsed(!collapsed);
+
+  return (
+    <div>
+      <Navbar color="faded" light>
+        <NavbarBrand href="/" className="mr-auto">Coder [at Law]</NavbarBrand>
+        <NavbarToggler onClick={toggleNavbar} className="mr-2" />
+        <Collapse isOpen={!collapsed} navbar>
+          <Nav navbar>
+          <NavItem>
+              <NavLink href="/">Home</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="../Pages/About">About</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="https://github.com/j-toups">GitHub</NavLink>
+            </NavItem>
+          </Nav>
+        </Collapse>
+      </Navbar>
+    </div>
+  );
 }
+
+export default Header;
