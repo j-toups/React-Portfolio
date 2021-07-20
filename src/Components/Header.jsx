@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 
-const Header = () => {
+const Header = (props) => {
   const [collapsed, setCollapsed] = useState(true);
 
   const toggleNavbar = () => setCollapsed(!collapsed);
@@ -14,10 +14,15 @@ const Header = () => {
         <NavbarToggler onClick={toggleNavbar} className="mr-2" />
         <Collapse isOpen={!collapsed} navbar>
           <Nav navbar>
-          <LinkContainer to="../Pages/About.js">
-            <button>Lets Go</button>
-          </LinkContainer> 
-            
+          <NavItem>
+              <NavLink href="/">Home</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="../Pages/About">About</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="https://github.com/j-toups">GitHub</NavLink>
+            </NavItem>
           </Nav>
         </Collapse>
       </Navbar>
