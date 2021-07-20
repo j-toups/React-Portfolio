@@ -1,11 +1,8 @@
 import React from "react";
-import { Jumbotron, Container } from 'reactstrap';
-import landingPhoto from '../Assets/mnt_landscape.jpg';
-
 
 export default function Header(){
     return (
-        <div>
+        
           <div className="footer">
             <footer class="py-1 bg-dark fixed-bottom">
               <div class="container">
@@ -15,7 +12,7 @@ export default function Header(){
               </div>
             </footer>
           </div>  
-        </div>
+        
     )
 }
 
