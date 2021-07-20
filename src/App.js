@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import About from "./Pages/About";
 import Footer from './Components/Footer';
-import Landing from './Pages/Landing';
+import { Landing } from './Pages/Landing';
 import Header from './Components/Header';
 
 class App extends Component{
@@ -13,10 +13,10 @@ class App extends Component{
           <Header></Header>
           <div>
             <About></About>
-            <Landing></Landing>
-            <Footer></Footer>
+            
           </div>
         </div>
+        <Footer></Footer>
       </div>
     )
   }
