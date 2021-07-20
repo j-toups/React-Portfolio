@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
-import { LinkContainer } from 'react-router-bootstrap';
 
-const Header = (props) => {
+
+const Header = () => {
   const [collapsed, setCollapsed] = useState(true);
 
   const toggleNavbar = () => setCollapsed(!collapsed);
@@ -18,7 +18,10 @@ const Header = (props) => {
               <NavLink href="/">Home</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="../Pages/About">About</NavLink>
+              <NavLink href="/about">About</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="/projects">Work</NavLink>
             </NavItem>
             <NavItem>
               <NavLink href="https://github.com/j-toups">GitHub</NavLink>

@@ -5,7 +5,7 @@ import Cards  from '../Components/Projects';
 
 
 
-export default class Project extends React.Component{
+export default class Projects extends React.Component{
     render() {
     return (
         <div>
