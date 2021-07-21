@@ -1,6 +1,7 @@
 .photo-box{
     display: flex;
     justify-content: center;
+    text-align: justify;
     margin-top: 5%;
     
 }
@@ -11,7 +12,6 @@
     width: 300px;
     height: 300px;
     margin-top: 5%;
-    text-align: justify;
 }
 
 .photo {
@@ -28,3 +28,4 @@ p {
     display: flex;
     justify-content: center;
 }
+

@@ -1,7 +1,7 @@
 import React from 'react';
 import {
   Card, CardImg, CardText, CardBody,
-  CardTitle, CardSubtitle, Button, Row, Col, NavItem, NavLink
+  CardTitle, CardSubtitle, Button, Row, Col
 } from 'reactstrap';
 
 import user_direct from '../Assets/user_direct.png';

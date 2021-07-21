@@ -12,7 +12,7 @@ import Footer from '../Components/Footer'
                  <Cell col={12}>
                     <div className ='photo-box'>
                         <div className='innerBox'>
-                            <img className='photo'src={headshot} style={{width:'100%', height:'100%'}}></img>
+                            <img className='photo'src={headshot} style={{width:'100%', height:'100%'}} alt=''></img>
                         </div>
                     </div>
                  </Cell>
@@ -35,11 +35,18 @@ import Footer from '../Components/Footer'
                     <div className='button-box'>
                         <div>
                             <Button/>
+                            <br></br>
+                            <br></br>
+                            <br></br>
+                            <br></br>
+                            
                         </div>
+                        <Footer></Footer>  
                     </div>
-                </Cell>     
+                </Cell>   
+                
             </Grid>
-            <Footer></Footer>
+            
         </div>
     )}
 
