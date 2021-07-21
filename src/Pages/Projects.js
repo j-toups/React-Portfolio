@@ -5,15 +5,14 @@ import Cards  from '../Components/Projects';
 
 
 
-export default class Projects extends React.Component{
+export default class Project extends React.Component{
     render() {
     return (
         <div>
-          <div style={{width: '100%', margin: 'auto'}}>
+          <div>
             <Grid className='project-grid'>
                  <Cell col={12}>
                    <Cards/>
-                   <p>WHATS UP</p>
                  </Cell>     
             </Grid>
          </div>

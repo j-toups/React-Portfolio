@@ -24,6 +24,9 @@ const Header = () => {
               <NavLink href="/projects">Work</NavLink>
             </NavItem>
             <NavItem>
+              <NavLink href="/contact">Contact</NavLink>
+            </NavItem>
+            <NavItem>
               <NavLink href="https://github.com/j-toups">GitHub</NavLink>
             </NavItem>
           </Nav>

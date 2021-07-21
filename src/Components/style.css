@@ -1,0 +1,30 @@
+.photo-box{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    
+}
+.innerBox {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 300px;
+    height: 300px;
+    margin-top: 5%;
+    text-align: justify;
+}
+
+.photo {
+    margin-top: 8%;
+    margin-bottom: 8%;
+    border-radius: 50%;
+}
+
+p {
+    color: rgb(0, 0, 0);
+}
+
+.button-box {
+    display: flex;
+    justify-content: center;
+}

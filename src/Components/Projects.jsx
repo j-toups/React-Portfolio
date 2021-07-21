@@ -1,35 +1,138 @@
 import React from 'react';
-import { Card, CardBody, CardTitle, CardText, CardImg } from 'reactstrap';
+import {
+  Card, CardImg, CardText, CardBody,
+  CardTitle, CardSubtitle, Button, Row, Col, NavItem, NavLink
+} from 'reactstrap';
 
-export default class Cards extends React.Component {
-  render() {
+import user_direct from '../Assets/user_direct.png';
+import mysql from '../Assets/MYSQL.PNG'
+import paws from '../Assets/paws.png'
+import budge from '../Assets/budge-it.PNG'
+
+const Cards = () => {
   return (
     <div>
     <div>
-      <Card className= 'project-card'>
-        <CardImg top width="100%" src="../Assets/budge-it.PNG" alt="" />
-        <CardBody>
-          <CardTitle tag="h5">Budge-It</CardTitle>
-          <CardText></CardText>
-          <CardText>
-            <small className="text-muted">Last updated 3 mins ago</small>
-          </CardText>
-        </CardBody>
-      </Card>
+      <Row>
+        <Col>
+        <Card>
+          <CardImg top width="100%" src={user_direct} alt="" />
+            <CardBody>
+              <CardTitle tag="h5">mySQL Directs People</CardTitle>
+              <CardSubtitle tag="h6" className="mb-2 text-muted">A user/employee directory</CardSubtitle>
+              <CardText>Built with mySQL, JavaScript, Node.js, and React.js</CardText>
+              <a href="https://github.com/j-toups/React-DIrects-People">
+              <Button>GitHub</Button>
+              </a>
+              <br></br>
+              <br></br>
+              <a href="https://user-directoryyyyyy.herokuapp.com/">
+              <Button>Heroku</Button>
+              </a>
+            </CardBody>
+        </Card>
+        </Col>
+        <Col>
+        <Card>
+          <CardImg top width="100%" src={mysql} alt="" />
+            <CardBody>
+              <CardTitle tag="h5">mMySQL Mischief Managed</CardTitle>
+              <CardSubtitle tag="h6" className="mb-2 text-muted">A Node.js App for Managers </CardSubtitle>
+              <CardText>Allows a manager to add, edit, and delete employee information</CardText>
+              <a href="https://github.com/j-toups/React-DIrects-People">
+              <Button>GitHub</Button>
+              </a>
+              <br></br>
+              <br></br>
+              <a href="https://youtu.be/a7l_E4nHKkM">
+              <Button>YouTube</Button>
+              </a>
+            </CardBody>
+        </Card>
+        </Col>
+        <Col>
+        <Card>
+          <CardImg top width="100%" src={budge} alt="" />
+            <CardBody>
+              <CardTitle tag="h5">Budge-It</CardTitle>
+              <CardSubtitle tag="h6" className="mb-2 text-muted">A Budget Tracker Tool</CardSubtitle>
+              <CardText>Built with mySQL, JavaScript, and React.js</CardText>
+              <a href ="https://github.com/j-toups/Budge-It">
+              <Button>GitHub</Button>
+              </a>
+              <br></br>
+              <br></br>
+              <a href="https://mysterious-hollows-82099.herokuapp.com/">
+              <Button>Heroku</Button>
+              </a>
+            </CardBody>
+        </Card>
+        </Col>
+        
+        
+      </Row> 
     </div>
     <div>
-      <Card>
-      <CardImg top width="100%" src="../Assets/MYSQL.PNG" alt="" />
-        <CardBody>
-          <CardTitle tag="h5">MySQL</CardTitle>
-          <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</CardText>
-          <CardText>
-            <small className="text-muted">Last updated 3 mins ago</small>
-          </CardText>
-        </CardBody>
-      </Card>
+      <Row>
+        <Col>
+          <Card>
+            <CardImg top width="100%" src={paws} alt="" />
+              <CardBody>
+                <CardTitle tag="h5">Paws N Claws</CardTitle>
+                <CardSubtitle tag="h6" className="mb-2 text-muted">A Pet Adoption App</CardSubtitle>
+                <CardText>Built with mySQL, JavaScript, and React.js</CardText>
+                <a href="https://github.com/j-toups/Paws-and-Claws">
+                <Button>GitHub</Button>
+                </a>
+                <br></br>
+                <br></br>
+                <a href="https://pawsandclawss.herokuapp.com/">
+                <Button>Heroku</Button>
+                </a>
+              </CardBody>
+          </Card>
+        </Col>
+        <Col>
+          <Card>
+            <CardImg top width="100%" src={paws} alt="" />
+              <CardBody>
+                <CardTitle tag="h5">Paws N Claws</CardTitle>
+                <CardSubtitle tag="h6" className="mb-2 text-muted">A Pet Adoption App</CardSubtitle>
+                <CardText>Built with mySQL, JavaScript, and React.js</CardText>
+                <a href="https://github.com/j-toups/Paws-and-Claws">
+                <Button>GitHub</Button>
+                </a>
+                <br></br>
+                <br></br>
+                <a href="https://pawsandclawss.herokuapp.com/">
+                <Button>Heroku</Button>
+                </a>
+              </CardBody>
+          </Card>
+        </Col>
+        <Col>
+          <Card>
+            <CardImg top width="100%" src={paws} alt="" />
+              <CardBody>
+                <CardTitle tag="h5">Let's Eat</CardTitle>
+                <CardSubtitle tag="h6" className="mb-2 text-muted">A Food and Drink Pairing App </CardSubtitle>
+                <CardText>Built with HTML, CSS, Tailwins, Javascript, JQuery, and APIs</CardText>
+                <a href="https://github.com/j-toups/letseats">
+                <Button>GitHub</Button>
+                </a>
+                <br></br>
+                <br></br>
+                <a href = "https://j-toups.github.io/letseat/">
+                <Button>GitHub Pages</Button>
+                </a>
+              </CardBody>
+          </Card>
+        </Col>
+      </Row>
     </div>
     </div>
-  )}
+  );
 };
+
+export default Cards;
 
