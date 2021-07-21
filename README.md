@@ -1,7 +1,7 @@
 # React Portfolio 
 
 ## Description and Usage
-Here, you can see my work, my resume, contact info, and a bit about me!
+Here, you can see my work, my resume, contact info, and a bit about me in a mobile-first React App.
 
 Built using Javacript, React.js, Reactstrap, and CSS.
 
