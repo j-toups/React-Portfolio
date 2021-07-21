@@ -18,7 +18,16 @@ export default class Contact extends React.Component{
                   </div>
                </Cell>     
                <Cell>
-                  <p></p>
+               <div className='photo-box'>
+                     <div >
+                        <p> Email: coderatlaw@gmail.com </p>
+                           
+                        <p>Follow me on <a href ="https://github.com/j-toups">Git Hub!</a> </p>
+                            
+                        <p>Let's connect on <a href="https://www.linkedin.com/in/joseph-toups-05376884" target="_blank">LinkedIn</a></p>
+                            
+                    </div>
+                    </div>
                   
                </Cell>
          </Grid>
