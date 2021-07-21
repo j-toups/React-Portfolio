@@ -2,6 +2,7 @@ import React from 'react';
 import map from '../Assets/Seattle_map.png'
 import { Grid, Cell } from 'react-mdl';
 import '../Components/style.css';
+import Footer from '../Components/Footer'
 
 
 
@@ -30,6 +31,7 @@ export default class Contact extends React.Component{
                     </div>
                   
                </Cell>
+               <Footer></Footer>
          </Grid>
       </div>
    )}

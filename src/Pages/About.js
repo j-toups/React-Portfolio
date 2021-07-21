@@ -3,6 +3,7 @@ import headshot from '../Assets/casual_headshot.jpg';
 import { Grid, Cell } from 'react-mdl';
 import '../Components/style.css';
 import  Button  from '../Components/Button';
+import Footer from '../Components/Footer'
 
  const About = () => {
     return (
@@ -38,6 +39,7 @@ import  Button  from '../Components/Button';
                     </div>
                 </Cell>     
             </Grid>
+            <Footer></Footer>
         </div>
     )}
 

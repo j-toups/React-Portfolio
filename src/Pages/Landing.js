@@ -2,6 +2,7 @@ import React from 'react';
 import background from '../Assets/mnt_landscape.jpg'
 import { Grid, Cell } from 'react-mdl';
 import '../Components/style.css';
+import Footer from '../Components/Footer'
 
 
 export default class Landing extends React.Component{
@@ -20,6 +21,7 @@ export default class Landing extends React.Component{
                   
                </Cell>
          </Grid>
+         <Footer></Footer>
       </div>
    )}
 };
