@@ -6,10 +6,11 @@ import Footer from '../Components/Footer'
 
 
 
+
 export default class Contact extends React.Component{
    render() {
     return (
-      <div>
+      <div className='bodyOdy'>
          <Grid>
                <Cell col={12}>
                   <div className ='photo-box'>
